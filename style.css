@@ -1,0 +1,33 @@
+@import url('https://fonts.google.apis.com/css?family=Poppins:400:400:700');
+
+html, body{
+    height:100%;
+    width:100%;
+    font-family:'Poppins', sans-serif;
+    color:#222;
+}
+.navbar{
+    padding:.8rem;
+}
+/* .navbar2 a{
+    margin-right:10px
+} */
+
+.carousel-caption h1{
+    text-shadow:10px 10px 10px #000;
+    font-weight:500%;
+
+}
+.carousel-caption{
+    text-shadow:10px 10px 10px #000;
+    font-weight:500%;
+
+}
+.jumbotron{
+    padding:1rem;
+    border-radius:0;
+    background-color:rgb(80, 177, 233);
+}
+#out{
+    background-color:yellow;
+}
