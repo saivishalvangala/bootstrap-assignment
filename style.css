@@ -31,3 +31,32 @@ html, body{
 #out{
     background-color:yellow;
 }
+/*card*/
+
+/*list-group*/
+.list-group li:hover{
+    text-decoration:underline;
+    color:black;
+}
+/*full container*/
+.full{
+    background-color:rgb(103, 103, 179);
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.foot{
+    background-color: rgb(39, 47, 59);
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
+.fa{
+    color:white;
+}
+.foot-text{
+    font-size:10px;
+}
+.foot span:hover{
+    text-decoration:underline;
+    color:rgb(228, 169, 169);
+}

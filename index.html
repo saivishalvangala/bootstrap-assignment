@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <!--fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
+    <link rel="icon" type = "image/png" href = "http://www.booking.com/favicon.ico">
+    <title>Booking[dot]com</title>
   </head>
 <body>
     <!--navbar1-->
     <nav class="navbar navbar-expand-lg navbar-primary bg-dark sticky-top">
         <a class="navbar-brand" href="#"><img src="images/navicon.png" alt="booking.com"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <button class="navbar-toggler btn-default ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" style="background-color:white"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active mr-4">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item active ">
                     <a class="nav-link" href="#"><button type="button" class="btn btn-primary btn-sm">List your property</button> <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item mr-4">
+                <li class="nav-item ">
                     <a class="nav-link" href="#"><button type="button" class="btn btn-outline-light btn-sm">Register</button></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><button type="button" class="btn btn-outline-light btn-sm">Sign-in</button></a>
+                    <a class="nav-link" href="#"><button type="button" class="btn btn-outline-light btn-sm"  data-toggle="modal" data-target="#signinModal">Sign-in</button></a>
                 </li>
             </ul>
         </div>
@@ -38,12 +39,12 @@
 <!--navbar2-->
 <nav class="navbar2 navbar-expand-lg navbar-dark bg-dark">
         <!-- <a class="navbar-brand" href="#"><img src="images/navicon.png" alt="booking.com"></a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <button class="navbar-toggler btn-primary" type="button" data-toggle="collapse" data-target="#navbarNav1"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ">
+        <div class="collapse navbar-collapse" id="navbarNav1">
+            <ul class="navbar-nav text-center">
                 <li class="nav-item active ml-2 mr-4">
                     <a class="nav-link" href="#"><span class="fa fa-home mr-1"></span>Accomodation</a>
                 </li>
@@ -118,25 +119,18 @@
                   <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
               </nav>
-        <a class="btn btn-danger btn-md mt-2" href="#" role="button">BOOK NOW!!</a>
+        <a class="btn btn-danger btn-md mt-2" href="#" role="button" data-toggle="modal" data-target="#bookingModal">BOOK NOW!!</a>
 </div>
 </div>
 
-<!--fixed background section-->
-<figure>
-    <div class="fixed-wrap">
-        <div id="fixed">
 
-        </div>
-    </div>
-</figure>
 
 <!--3 column section-cards-->
 <div class="container-fliud padding">
     <div class="row padding">
         <div class="welcome text-center col-xl-12">
             <!-- <div class="col-xs-12"> -->
-                <h2 class="m-5">Get Inspiration for yout Next trip</h2>
+                <h2 class="m-2">Get Inspiration for yout Next trip</h2>
             <!-- </div> -->
         </div>
         <div class="card col-sm-12 col-md-6 col-lg-3">
@@ -198,7 +192,7 @@
     
 
 <!--full contianer-->
-<div class="container-fluid mt-5 mb-5">
+<div class="container-fluid full mt-2 mb-1">
             <div class="text-center">
                 <p class="lead">Save time, save money!</p>
                 <p >Sign up and we'll send the best deals to you</p>
@@ -209,29 +203,99 @@
                         </div>
 
                         </form>
-                <a class="btn btn-danger btn-md mt-2" href="#" role="button">BOOK NOW!!</a>
+                <a class="btn btn-danger btn-md mt-2" href="#" role="button" data-toggle="modal" data-target="#bookingModal" >BOOK NOW!!</a>
                
         </div>
         </div>
 <!--privacy note-->
-<div class="container-fluid mt-5">
+<!-- <div class="container-fluid mt-5">
         <p>Privacy Note</p>
         <p>Whoever you are, whatever you seek, we’ve got the perfect place for you. Our 28,982,122 listings include 6,223,468 listings of homes, apartments and other unique places to stay, and are located in 153,519 destinations in 227 countries and territories. Booking.com B.V. is based in Amsterdam, the Netherlands and is supported internationally by 198 offices in 70 countries.</p>
+</div> -->
+<!-- Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+            <small id="emailHelp" class="form-text text-muted">Firstname, Lastname</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">E-mail address</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="e-mail">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I accept to terms & conditions</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Book</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--signin modal-->
+<div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Log-in</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
 <!--footer-->
-<footer class="container-fluid mt-5 bg-dark">
+<footer class="container-fluid mt-1 foot">
     <div class="row">
     <div class="col-4">
-            <span class="fa fa-users">Help line</span>
+            <span class="fa fa-users ml-2">Help line</span>
     </div>
     <div class="col-4">
-           <span class="fa fa-ticket">resend booking confirmation</span>
+           <span class="fa fa-ticket ml-2">resend booking confirmation</span>
     </div>
     <div class="col-4">
-            <span class="fa fa-envelope">resend booking confirmation</span>
+            <span class="fa fa-envelope ml-2">feedback</span>
     </div>
     </div>
-    <img class="mx-auto d-block mt-5 mb-5 " src="images/navicon.png" alt="booking.com"/>
+    <img class="mx-auto d-block mt-1 mb-1 img-fluid" src="images/navicon.png" alt="booking.com"/>
      </div class="col-12 social padding">
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
@@ -240,7 +304,7 @@
      </div>
      
 
-   <div class="text-center">
+   <div class="foot-text text-center">
     <p>Copyright 2019 © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.    </p>
     <p>he content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied.</p>
     <p>Unauthorized use is prohibited and punishable by law</p>
